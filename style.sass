@@ -1,0 +1,60 @@
+@import './variables'
+  
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background-color: $body-bg-color
+
+h1  
+  color: $text-right-bg
+  font-family:  'VT323', sans-serif
+  font-size: 5rem
+  text-transform: uppercase
+h2
+  color: $text-right-bg
+  font-family:  'VT323', sans-serif
+  font-size: 1.5rem
+  text-transform: uppercase
+  margin: .5rem  
+
+.box
+  width: 700px
+  height: 400px
+  display: flex
+  margin: 1rem
+  border-radius: 1rem
+  transform: translateX(400%)
+  transition: transform .6s ease
+  &:nth-of-type(even)
+    transform: translateX(-400%)
+
+  &.show
+    transform: translateX(0)
+  & img
+    width: 70%
+    border-radius: 1rem 0 0 1rem
+  & .inner-box-right
+    width: 30%
+    padding: 1rem
+    background-color: $text-right-bg
+    border-radius: 0 1rem 1rem 0
+  & .card-title
+    font-size: 3rem
+    color: #444
+    font-family: 'VT323', sans-serif
+  & h2
+    font-size: 1.4rem
+    color: #444
+    font-family: 'VT323', sans-serif
+    margin: 0
+    margin-bottom: 1rem
+    p  
+      margin-top: 1rem
+  
